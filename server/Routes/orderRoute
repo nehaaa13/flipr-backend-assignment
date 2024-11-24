@@ -1,0 +1,9 @@
+// orderRoute.js
+const express = require("express");
+const router = express.Router();
+const orderController = require("../Controllers/orderController");
+
+// GET /getallorders - Get all orders with pagination and filtering
+router.get("/getallorders", orderController.getAllOrders);
+
+module.exports = router;
